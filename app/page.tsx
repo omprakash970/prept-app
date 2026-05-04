@@ -5,7 +5,7 @@ import { Car } from "lucide-react";
 export default function Home() {
   return (
     <>
-     <Button variant={"gold"}>Click me</Button>
+     <Button  variant={"gold"}>Subsrcibe</Button>
     
     </>
    
