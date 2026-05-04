@@ -3,6 +3,8 @@ import { Lora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/ui/themes";
+import Header from "@/components/Header";
 const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -21,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{theme:dark,}} >
       <html lang="en" className={`${lora.variable} font-sans`} suppressHydrationWarning>
         <body className="min-h-full flex flex-col antialiased">
           <ThemeProvider
@@ -30,6 +32,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             <main className="flex-1">
               {children}
             </main>
