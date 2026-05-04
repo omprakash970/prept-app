@@ -20,7 +20,7 @@ const Header = () => {
               Sign In
             </Button>
           </SignInButton>
-          <SignUpButton mode='modal'>
+          <SignUpButton >
             <Button variant="ghost">
               Get Started
             </Button>
