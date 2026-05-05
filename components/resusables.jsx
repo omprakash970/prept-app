@@ -1,3 +1,9 @@
-export const GrayTitle = ({children})=><span className="bg-gradient-to-br from-stone-100 via-stone-300 to-stone-500">{children}</span>
-export const GoldTitle = ({children})=><span className="bg-gradient-to-br from-amber-100 via-amber-300 to-amber-500">{children}</span>
-export const SectionLable =({children})=><span className="bg-gradient-to-br from-slate-100 via-slate-300 to-slate-500">{children}</span>
+export const GrayTitle = ({children})=><span className="bg-linear-to-br from-stone-100 via-stone-300 to-stone-500 bg-clip-text text-transparent">{children}</span>
+
+export const GoldTitle = ({children})=><span className="bg-linear-to-br from-amber-100 via-amber-300 to-amber-500 bg-clip-text text-transparent">{children}</span>
+
+
+export const SectionLabel = ({children})=>(
+  <p className="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 tracking-normal-[0.14em] uppercase mb-4"
+  >{children}</p>
+)
