@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "lib/data.js"  ],
+, "lib/data.js", "components/resusables.jsx", "app/page.jsx"  ],
   "exclude": ["node_modules"]
 }
